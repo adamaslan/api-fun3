@@ -1,12 +1,12 @@
 import { useRouter } from "next/router";
-
+import Layout from "../../components/Layout";
 export default function EventPage() {
   const router = useRouter();
   return (
-    <div>
+    <Layout>
       <h1>My Event</h1>
       <h3>{router.query.slug}</h3>
-    </div>
+    </Layout>
   );
 }
 //http://localhost:3000/events/events-1
