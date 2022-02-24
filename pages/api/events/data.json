@@ -3,7 +3,7 @@
     {
       "id": "1",
       "name": "Throwback Thursdays with DJ Manny Duke",
-      "slug": "throwback-thursdays-with-dj-manny-duke",
+      "slug": "test1",
       "venue": "Horizon Club",
       "address": "919 3rd Ave New York, New York(NY), 10022",
       "performers": "DJ Manny Duke",
@@ -27,7 +27,7 @@
     {
       "id": "3",
       "name": "Encore Night Boat Party",
-      "slug": "encore-night-boat-party",
+      "slug": "test2",
       "venue": "Encore",
       "address": "675 Water St New York, New York(NY), 10002",
       "performers": "Bad Boy Bill",

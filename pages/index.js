@@ -1,10 +1,20 @@
-import Link from "next/link";
 import Layout from "../components/Layout";
-export default function HomePage() {
+import { API_URL } from "@/config/index";
+
+export default function HomePage({ events }) {
+  console.log(events);
   return (
     <Layout>
-      <h1>Home</h1>
-      <Link href="about">About</Link>
+      <h1>Upcoming events</h1>
     </Layout>
   );
+}
+
+export async function getserversideprops() {
+  const res = await fetch(`${API_URL}/api/events`);
+  const events = await res.json();
+
+  return {
+    props: { events },
+  };
 }
