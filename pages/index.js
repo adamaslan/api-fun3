@@ -1,5 +1,6 @@
 import Layout from "../components/Layout";
 import { API_URL } from "@/config/index";
+import EventItem from "@/components/EventItem";
 
 export default function HomePage({ events }) {
   console.log(events);
@@ -8,7 +9,7 @@ export default function HomePage({ events }) {
       <h1>Upcoming events</h1>
       {events.length === 0 && <h3>No Events to Show</h3>}
       {events.map((evt) => (
-        <h3 key={evt.id}>{evt.name}</h3>
+        <EventItem key={evt.id} evt={evt} />
       ))}
     </Layout>
   );
