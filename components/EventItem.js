@@ -16,7 +16,7 @@ export default function EventItem({ evt }) {
         <span>
           {evt.date} at {evt.time}
         </span>
-        <h3>{evt.namne}</h3>
+        <h3>{evt.name}</h3>
       </div>
       <div className={styles.link}>
         <Link href={`/events/${evt.slug}`}>
