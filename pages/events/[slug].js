@@ -9,6 +9,7 @@ export default function EventPage({ evt }) {
   const deleteEvent = (e) => {
     console.log("delete");
   };
+
   return (
     <Layout>
       <div className={styles.event}>
@@ -24,11 +25,12 @@ export default function EventPage({ evt }) {
         </div>
 
         <span>
-        {new Date(evt.date).toLocaleDateString('en-US')} at {evt.time}
+          {new Date(evt.date).toLocaleDateString("en-US")} at {evt.time}
+        </span>
         <h1>{evt.name}</h1>
         {evt.image && (
           <div className={styles.image}>
-          <Image
+            <Image
               src={evt.image.formats.medium.url}
               width={960}
               height={600}
